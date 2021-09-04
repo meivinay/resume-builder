@@ -9,3 +9,62 @@
 .template-B {
   color: blue;
 }
+.name-contact-A{
+height: 5rem;
+width:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+
+h6{
+color:blue;
+margin-block: 2rem;
+
+}
+.summary-A h6{
+  margin: 0;
+}
+.name-A{
+  height:70%;
+}
+.contact-A{
+  display: flex;
+  justify-content: space-evenly;
+  height: 30%;
+  width: 100%;
+}
+
+.summary-A{
+  display: flex;
+  justify-content: space-evenly;
+}
+.summary-A>h6{
+  width: 30%;
+  color:blue;
+}
+.summary-A>div{
+  width: 80%;
+  overflow-wrap: break-word;
+}
+.skills{
+  display: flex;
+}
+.skills ul{
+  margin-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  /* height: 12%; */
+  max-height: 6rem;
+  /* max-width: 10rem; */
+  width: 100%;
+  flex-wrap: wrap;
+}
+.education{
+display: flex;
+}
+.education-details-A{
+  margin-left:2rem;
+  color: black;
+}

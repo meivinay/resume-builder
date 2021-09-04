@@ -3,6 +3,8 @@ import { Redirect, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
 import { templateCreator } from "../redux/actions/templateActions";
 import "./css/home.css";
+import skin1 from "../skin1.svg"
+import skin2 from "../skin2.svg"
 
 let Home = () => {
   let user = useSelector((state) => state.user);
@@ -20,7 +22,7 @@ let Home = () => {
           }}
           className="template"
         >
-          <img src="http://localhost:3000/skin1.svg" />
+          <img src={skin1} alt="skin1" />
         </div>
         <div
           onClick={() => {
@@ -29,7 +31,7 @@ let Home = () => {
           }}
           className="template"
         >
-          <img src="http://localhost:3000/skin2.svg" />
+          <img src={skin2} alt="skin2" />
         </div>
       </div>
 

@@ -10,6 +10,8 @@ let initialState = {
   cgpa: "",
   year: "",
   isPublic: false,
+  skills:[],
+  summary:""
 };
 
 let detailsReducer = (state = initialState, action) => {

@@ -3,11 +3,12 @@ import "./css/form.css";
 import { useDispatch, useSelector } from "react-redux";
 import { detailCreator } from "../redux/actions/detailsActions";
 import { useHistory } from "react-router-dom";
+import { useState } from "react";
 
 let PersonalData = () => {
   let details = useSelector((state) => state.details);
-
-  let { fname, lname, email, phone, city, state } = details;
+  let [currentSkill, setSkill] = useState("");
+  let { fname, lname, email, phone, city, state, summary, skills } = details;
 
   let history = useHistory();
 
@@ -89,7 +90,36 @@ let PersonalData = () => {
               />
             </div>
           </div>
-
+          <div className="summary-input">
+            <input
+              className="form-control"
+              onChange={(e) => {
+                dispatch(detailCreator({ summary: e.currentTarget.value }));
+              }}
+              type="text"
+              placeholder="professional summary"
+              value={summary}
+            ></input>
+          </div>
+          <div className="skills-input">
+            <input
+              onKeyDown={(e) => {
+                if ((e.key === "Enter")) {
+                  dispatch(
+                    detailCreator({ skils: skills.push(e.target.value) })
+                  );
+                  setSkill("");
+                }
+              }}
+              onChange={(e) => {
+                setSkill(e.target.value);
+              }}
+              type="text"
+              class="form-control"
+              placeholder="skills"
+              value={currentSkill}
+            ></input>
+          </div>
           <button
             onClick={() => {
               history.push("/qualifications");
