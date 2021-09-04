@@ -16,8 +16,8 @@ let App = () => {
   let dispatch = useDispatch();
 
   useEffect(() => {
-    // when authstatechange there is no role of useEffect in it,,,, it is a event subsribed to events of login and logout... user is remebered
     let unsub = auth.onAuthStateChanged(async (user) => {
+      // when authstatechange there is no role of useEffect in it,,,, it is a event subsribed to events of login and logout... user is remebered
       // dispatch is sending object to the store not the useCreator function
       // this will cause the state to change and the component that is currently mounted will re-render
       dispatch(userCreator(user));
