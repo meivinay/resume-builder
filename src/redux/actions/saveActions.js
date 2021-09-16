@@ -23,7 +23,7 @@ export const saveCompletedCreator = (id) => {
 export const saveResume = (uid, details, code) => {
   return (dispatch) => {
     dispatch(saveResumeCreator());
-
+    // when doc not specifid than firebase gives his own doc key
     firestore
       .collection("resume")
       .add({

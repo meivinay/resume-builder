@@ -20,3 +20,18 @@
   bottom: 8rem;
   right: 40px;
 }
+/* .txt-box{
+  margin-bottom: 1rem;
+} */
+
+ .summary-input,.skills-input{
+   height: 5rem;
+  width: 77% !important;
+  margin-left: 1.5rem;
+}
+.skills-input::before{
+  content: "Press Enter to insert";
+  color: black;
+  height: 2rem;
+  width: 2rem;
+}

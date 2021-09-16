@@ -9,9 +9,9 @@ let Login = () => {
   let [email, setEmail] = useState("");
   let [password, setPassword] = useState("");
 
+  // when we press the login button onAuthStateChanged change the state , the comp re-render, when re-render user is not null than it redirect to home
   return (
     <>
-    // when we press the login button onAuthStateChanged change the state , the comp re-render, when re-render user is not null than it redirect to home
       {user ? <Redirect to="/home" /> : ""}
       <div className="row">
         <div className="col-4 offset-4">

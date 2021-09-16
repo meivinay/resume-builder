@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect, useHistory } from "react-router-dom";
-import { auth } from "../firebase";
 import { templateCreator } from "../redux/actions/templateActions";
 import "./css/home.css";
 import skin1 from "../skin1.svg"
@@ -35,15 +34,6 @@ let Home = () => {
         </div>
       </div>
 
-      <button
-        className="btn-primary home-logout-btn"
-        onClick={() => {
-          // when logou onauthstate change dispatch a action, causes state change in redux, cuurent comp re-render, user set to null , redirect to login
-          auth.signOut();
-        }}
-      >
-        Logout
-      </button>
     </>
   );
 };

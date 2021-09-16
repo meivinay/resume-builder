@@ -1,11 +1,10 @@
 .home-logout-btn{
     position: fixed;
-    bottom: 8rem;
-    right: 20px;
-    height: 4rem;
+    top: 1rem;
+    right: 2rem;
+    height: 2rem;
     width: 4rem;
     border: none;
-    border-radius: 50%;
 }
 
 .template-container{

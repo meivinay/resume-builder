@@ -31,7 +31,7 @@ let PersonalData = () => {
                 }}
               />
             </div>
-            <div class="col-5">
+            <div className="col-5 mb-3 txt-box">
               <input
                 value={lname}
                 onChange={(e) => {
@@ -43,7 +43,7 @@ let PersonalData = () => {
               />
             </div>
 
-            <div class="col-5">
+            <div className="col-5 mb-3 txt-box">
               <input
                 value={email}
                 onChange={(e) => {
@@ -54,7 +54,7 @@ let PersonalData = () => {
                 placeholder="Email"
               />
             </div>
-            <div class="col-5">
+            <div className="col-5 mb-3 txt-box">
               <input
                 value={phone}
                 onChange={(e) => {
@@ -66,7 +66,7 @@ let PersonalData = () => {
               />
             </div>
 
-            <div class="col-5">
+            <div className="col-5 mb-3 txt-box">
               <input
                 value={city}
                 onChange={(e) => {
@@ -78,7 +78,7 @@ let PersonalData = () => {
               />
             </div>
 
-            <div class="col-5">
+            <div className="col-5 mb-3 txt-box">
               <input
                 value={state}
                 onChange={(e) => {
@@ -90,9 +90,9 @@ let PersonalData = () => {
               />
             </div>
           </div>
-          <div className="summary-input">
+          <div className="summary-input ">
             <input
-              className="form-control"
+              className=" form-control"
               onChange={(e) => {
                 dispatch(detailCreator({ summary: e.currentTarget.value }));
               }}

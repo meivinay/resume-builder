@@ -2,13 +2,23 @@
   width: 50%;
 }
 
-.template-A {
-  color: red;
+.names{
+  margin-top: 2rem;
+  display: flex;
+}
+.name-initials-box{
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(84, 148, 245);
+  font-size: 4em;
+  font-weight:500;
+  color: white;
 }
 
-.template-B {
-  color: blue;
-}
 .name-contact-A{
 height: 5rem;
 width:100%;
@@ -17,9 +27,10 @@ flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
 }
-
+.resume-body{
+  margin-top:2rem;
+}
 h6{
-color:blue;
 margin-block: 2rem;
 
 }
@@ -27,22 +38,26 @@ margin-block: 2rem;
   margin: 0;
 }
 .name-A{
-  height:70%;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
 }
 .contact-A{
   display: flex;
   justify-content: space-evenly;
-  height: 30%;
+  height: 100%;
   width: 100%;
 }
-
+.other-details{
+width: 100%;
+}
 .summary-A{
   display: flex;
   justify-content: space-evenly;
 }
 .summary-A>h6{
   width: 30%;
-  color:blue;
 }
 .summary-A>div{
   width: 80%;
@@ -51,8 +66,10 @@ margin-block: 2rem;
 .skills{
   display: flex;
 }
+.skills h6, .education h6{
+  width: 30%;
+}
 .skills ul{
-  margin-left: 6rem;
   display: flex;
   flex-direction: column;
   /* height: 12%; */
@@ -60,11 +77,24 @@ margin-block: 2rem;
   /* max-width: 10rem; */
   width: 100%;
   flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 .education{
 display: flex;
 }
 .education-details-A{
-  margin-left:2rem;
+  margin-left: 2rem;
   color: black;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+p{
+  font-size: 1.2rem;
+}
+.degree{
+  font-size: 2rem;
+  color: grey;
 }
