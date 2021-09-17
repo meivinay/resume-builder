@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/home";
-
+import "./components/css/app.css"
 import Login from "./components/login";
 import Navbar from "./components/navbar";
 import PersonalData from "./components/personalData";
@@ -11,7 +11,6 @@ import Qualifications from "./components/qualifications";
 import SignUp from "./components/signup";
 import { auth, firestore } from "./firebase";
 import { userCreator } from "./redux/actions/userActions";
-
 let App = () => {
   let dispatch = useDispatch();
 

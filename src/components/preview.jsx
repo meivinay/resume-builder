@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import "./css/preview.css";
-
+import "./css/preview2.css"
 let Preview = (props) => {
   let {
     fname,
@@ -20,23 +20,24 @@ let Preview = (props) => {
   let templateCode = useSelector((state) => state.template);
   return (
     <>
-      <div className="preview-container">
-      <div className= "names">
-      <div className="name-initials-box">
+      <div className={`preview-container ${templateCode}`}>
+      <div className= {`names ${templateCode}`}>
+     { templateCode == "A" ? <div className= {`name-initials-box ${templateCode}`} >
         {
           fname[0]
         }
         {
           lname[0]
         }
-      </div>
+      </div> : ""}
+      
         <div className={`name-contact-${templateCode}`}>
           <div className={`name-${templateCode}`}>
             <h1 className={`template-${templateCode}`}>
               {fname} {lname}
             </h1>
           </div>
-          <div className="other-details">
+          <div className={`other-details ${templateCode}`}>
             <div className={`contact-${templateCode}`}>
             <p className={`template-${templateCode}`}>{email}</p>
             <p className={`template-${templateCode}`}>{phone}</p>
@@ -48,12 +49,12 @@ let Preview = (props) => {
          
         </div>
       
-        <div className="resume-body">
+        <div className={`resume-body ${templateCode}`}>
           <div className={`summary-${templateCode}`}>
             <h6>PROFESSIONAL SUMMARY</h6>
             <div>{summary}</div>
           </div>
-          <div className="skills">
+          <div className={`skills ${templateCode}`}>
             <h6>SKILLS</h6>
             <ul>
               {skills.map((skill) => {
@@ -61,7 +62,7 @@ let Preview = (props) => {
               })}
             </ul>
           </div>
-          <div className="education">
+          <div className={`education ${templateCode}`}>
             <h6>EDUCATION</h6>
             <div className={`education-details-${templateCode}`}>
               <span className={`template-${templateCode} degree`}>{degree}</span>

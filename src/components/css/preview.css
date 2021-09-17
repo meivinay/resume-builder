@@ -1,12 +1,12 @@
-.preview-container {
+.preview-container.A {
   width: 50%;
 }
 
-.names{
+.names.A{
   margin-top: 2rem;
   display: flex;
 }
-.name-initials-box{
+.name-initials-box.A{
   position: relative;
   height: 6rem;
   width: 6rem;
@@ -27,7 +27,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-evenly;
 }
-.resume-body{
+.resume-body.A{
   margin-top:2rem;
 }
 h6{
@@ -49,7 +49,7 @@ margin-block: 2rem;
   height: 100%;
   width: 100%;
 }
-.other-details{
+.other-details.A{
 width: 100%;
 }
 .summary-A{
@@ -63,13 +63,13 @@ width: 100%;
   width: 80%;
   overflow-wrap: break-word;
 }
-.skills{
+.skills.A{
   display: flex;
 }
-.skills h6, .education h6{
+.skills.A h6, .education.A h6{
   width: 30%;
 }
-.skills ul{
+.skills.A ul{
   display: flex;
   flex-direction: column;
   /* height: 12%; */
@@ -80,7 +80,7 @@ width: 100%;
   margin-left: 2rem;
   margin-top: 2rem;
 }
-.education{
+.education.A{
 display: flex;
 }
 .education-details-A{
@@ -94,7 +94,7 @@ display: flex;
 p{
   font-size: 1.2rem;
 }
-.degree{
+.degree.A{
   font-size: 2rem;
   color: grey;
 }

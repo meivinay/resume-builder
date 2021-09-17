@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import { Redirect, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
 
+import "./css/app.css"
+
 let Login = () => {
   let history = useHistory();
   let user = useSelector((state) => state.user);
@@ -13,7 +15,7 @@ let Login = () => {
   return (
     <>
       {user ? <Redirect to="/home" /> : ""}
-      <div className="row">
+      <div className="row loginPage">
         <div className="col-4 offset-4">
           <h1 className="mt-4 mb-4">Login</h1>
           <form className="mt-4">

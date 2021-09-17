@@ -1,0 +1,49 @@
+.preview-container.B{
+    width: 50%;
+}
+
+.names-B{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.other-details.B{
+    width: 100%;
+}
+.contact-B{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.summary-B,.skills.B,.education.B{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills.B ul{
+    display: flex;
+    flex-direction: column;
+    /* height: 12%; */
+    max-height: 6rem;
+    /* max-width: 10rem; */
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.education-details-B{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.template-B.degree{
+    font-weight: bold;
+}
+h6{
+    color:blue;
+}
